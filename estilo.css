@@ -1,39 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
 	background: #d2d2c1 url('imagens/fundo.png');
 	font: 16px Arial, Helvetica, sans-serif;
-}
-
-#principal {
 	width: 900px;
+	align-items: center;
+	margin: 0 auto;
 }
 
-#menu {
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	background: #c5c5b2;
-	padding: 18px
-}
-
-#conteudo {
-	background: #e8e8d9;
 	padding: 10px;
+	width: 100%;
 }
 
-a {
+a{
 	color: #4b566a;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 5px
-
 }
 
-.centralizar {
-	text-align: center;
+a:hover{
+	transform: scale(1.1);
+	color: #717d92;
 }
 
-.img-campanha {
-	border: 10px solid #c3c3ae;
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #e8e8d9;
+	padding: 10px;
+	width: 100%;
 }
 
-h1 {
+h1{
+	font-size: 30px;
 	color: #828271;
-	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px;
+}
+
+p{
+	font-size: 20px;
+	color: #424852;
+	text-align: center;
+	padding: 30px;
+}
+
+.img-campanha{
+	max-width: 900px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+h4{
+	padding: 25px;
+}
+
+/* Form */
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+}
+
+label{
+	font-size: 20px;
+	color: #424852;
+	font-weight: bold;
+	margin: 5px;
+}
+
+input{
+	border: 1px solid #424852;
+	border-radius: 5px;
+	padding: 10px;
+	width: 300px;
+	height: 35px;
+	color: #424852;
+	font-weight: bold;
+	margin: 10px;
+}
+
+textarea{
+	border: 1px solid #424852;
+	border-radius: 5px;
+	padding: 10px;
+	width: 400px;
+	height: 125px;
+	color: #424852;
+	font-weight: bold;
+	margin: 10px;
+}
+
+
+#submit{
+	margin: 35px;
+	cursor: pointer;
+	background: #424852;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: #e8e8d9;
+	font-weight: bold;
+	width: 100px;
+}
+
+#submit:hover{
+	background: #717d92;
+	transform: scale(1.1);
 }
